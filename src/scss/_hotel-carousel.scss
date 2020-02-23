@@ -1,0 +1,101 @@
+.hotel-carousel {
+
+  @media (min-width:768px) {
+    padding-right: 0;
+  }
+
+  >ul 
+  {
+  width: 100%;
+  margin: 0px auto;
+  padding-inline-start: 0;
+
+  .slick-list {
+    .slick-slide {
+      margin: 2px;
+      &:not(.slick-active) {
+        img {
+          opacity: 0.5;
+        }
+      }
+      img {
+        width: 100%;
+        border: 2px solid #fff;
+      }
+
+     
+    }
+  }
+
+  .slick-arrow {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+      background-color: white;
+    }
+
+    &.slick-next {
+      right: 7px;
+      z-index: 1;
+      &::before {
+        content: "\f054";
+        font-family: fontawesome;
+        color: black;
+      }
+    }
+
+    &.slick-prev {
+      left: 7px;
+      z-index: 1;
+      &::before {
+        content: "\f053";
+        font-family: fontawesome;
+        color: black;
+      }
+    }
+  }
+
+  span.count {
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+    color: white;
+    font-size: 14px;
+  }
+  .slick-dots 
+  {
+    display: none !important;
+  }
+
+  &.slick-dotted.slick-slider
+  {
+    margin-bottom: 0;
+  }
+}
+
+.view-all 
+{
+  position: absolute;
+  margin-top: -60px;
+  right: 9%;
+  @media (max-width: 1200px) {
+    right: 12%;
+  }
+  @media (max-width: 992px) {
+    right: 14%;
+  }
+  @media (max-width: 576px) {
+    right: 20%;
+  }
+  a 
+  {
+    color: white;
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+}
+}

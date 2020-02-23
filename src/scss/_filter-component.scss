@@ -1,0 +1,248 @@
+@import "colors";
+.card-list{
+.cloud-filter {
+ width:100%;
+    .filter-container { 
+      box-shadow: 0 2px 13px rgba(0,0,0,.08);
+      background: $white;
+      padding: 20px;  
+      margin-bottom: 30px;
+      input[type="checkbox"] {
+        visibility: hidden;
+        position: absolute;
+      }
+ 
+      .toggle-icon {
+        transform: rotate(45deg);
+        transition: all ease 0.3s;
+
+
+      }
+      .filter-header {
+        background-color: $header-top-border;
+        padding: 12px 15px;
+        box-sizing: border-box;
+        cursor: pointer; 
+        display: block;
+     
+        &:hover {
+          background-color: $header-top-border;
+          opacity: 0.8;
+        }
+        .filter-header-name {
+          color: $white;
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 22px;
+          display: block;
+          position: relative;
+          cursor: pointer;
+          user-select: none;
+          &:after{
+            font-family: FontAwesome;
+            content: "\f067";
+            color: $white;
+            margin: 5px;
+          }
+        }
+        &[aria-expanded="true"] {
+          .toggle-icon {
+            transform: rotate(0);
+          }
+        }
+      }
+      .filter-body {
+        background-color:  $white;
+        box-shadow: 0px 2px 13px #00000014;
+      
+        .filter-body-list {
+          padding: 30px 0;
+          overflow: hidden;
+                .list-parent {
+      
+            overflow: hidden;
+            label {
+              color: $black;
+              display: flex;
+              .toggle-icon {
+                display: none;
+              }
+            }
+            dd {
+              margin-top: 24px;
+              .filter-select-all {
+                font-size: 13px;
+                font-weight: bold;
+              }
+              label {
+                padding-left: 30px;
+                position: relative;
+                &::before {
+                  content: "";
+                  width: 18px;
+                  height: 18px;
+                  border: 1px solid $black;
+                  display: block;
+                  box-sizing: border-box;
+                  left: 0;
+                  top: 3px;
+                  position: absolute;
+                  
+                }
+              }
+              input[type="checkbox"]:checked + label:before {
+                font-family: FontAwesome;
+               content: "\f00c";
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.5;
+                color: $red-colour;
+                
+              }
+              &:not(:first-child) {
+                input[type="checkbox"]:checked + label {
+                  color: $red-colour;
+                  font-weight: bold;
+                  &::before {
+                    border: 1px solid $red-colour;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .filter-controls {
+        
+          padding: 5px 0;
+          .filter-controls-container {
+            text-align: right;
+            .filter-clear {
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 12px;
+              cursor: pointer;
+            }
+            .apply {
+              background: none;
+              font-weight: bold;
+              color:$header-top-border;
+              border: 2px solid $header-top-border;
+              margin-left: 14px;
+              padding: 12px 32px;
+              transition: all ease 0.3s;
+              &:hover {
+                background-color :$header-top-border;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .filter-criteria {
+      padding-top: 5px;
+      background-color: $white;
+      display: flex;
+      padding-left: 0;
+      span {
+        color: #1aa9bf;
+        font-size: 14px;
+        .drop {
+        
+          margin-left: 5px;
+          cursor: pointer;
+  &:after{
+    font-family: FontAwesome;
+    content: "\f00d";
+    font-style: initial;
+  }
+        }
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+      
+        li {
+          color: $light-blue;
+          margin-right: 10px;
+          background-color: rgba(57, 195, 217, 0.1);
+          width: 106px;
+          height: 29px;
+          text-align: center;
+          border-width: 1px;
+          border-style: solid;
+          border-color: initial;
+          border-image: initial;
+          border-radius: 30px;
+          margin-bottom: 0;
+        
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      .filter-container {
+
+        .filter-header {
+          .filter-header-name {
+            display: flex;
+            .toggle-icon {
+              margin-left: auto;
+            }
+          }
+        }
+        .filter-body {
+          .filter-body-list {
+            padding: 5px 0;
+            .list-parent {
+              .filter-list-title {
+                padding: 5px 0;
+                .toggle-icon {
+                  display: block;
+                  margin-left: auto;
+                }
+              }
+              .filters-list {
+                dd {
+                  &:first-child {
+                    margin-top: 0;
+                  }
+                }
+                overflow: hidden;
+                max-height: 0;
+                transition: all ease 0.3s;
+                visibility: hidden;
+              }
+              &.show {
+                .toggle-icon {
+                  transform: rotate(0);
+                }
+                .filters-list {
+                  overflow: scroll;
+                  max-height: 400px;
+                  visibility: visible;
+                }
+              }
+            }
+          }
+          .filter-controls {
+            .filter-controls-container {
+              text-align: center;
+            }
+          }
+        }
+        .filter-criteria {
+          li {
+            padding: 5px;
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+}

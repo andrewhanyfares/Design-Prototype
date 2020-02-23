@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Worxzen - Search Filter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Temp -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../styles/main.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <!-- Theme Files -->
+    <link href="../styles/main-theme.css" rel="stylesheet">
+    <link href="../styles/main-theme.css" rel="stylesheet">
+
+    <!--Component styles-->
+    <link rel="stylesheet" href="../dist/css/app.css">  
+</head>
+
+<body>
+    <!-- #wrapper -->
+    <div id="wrapper">
+        <!-- #main -->
+        <div id="main" class="container">
+            <div class="row">
+                <!-- Classic Theme-->
+                <div class="col-lg-8">
+                    <div class="card-list">
+                            <div class="component cloud-filter flat">
+                                    <div class="component-content">
+                                        <div class="filter-container">
+                                            <label class="filter-header" data-toggle="collapse" data-target="#filter-body"
+                                                aria-expanded="false" aria-controls="filter-body">
+                                                <span class="filter-header-name">Filter News <i class="toggle-icon"></i></span>
+                                            </label>
+                                            <div id="filter-body" class="filter-body collapse col-lg-12">
+                                                <ul class="filter-body-list row">
+                                                    <li class="list-parent col-lg-3">
+                                                        <input type="checkbox" id="category1" class="filter-list-collapse">
+                                                        <label for="category2" class="filter-list-title">Business <i
+                                                                class="toggle-icon"></i></label>
+                                                        <dl class="filters-list">
+                                                            <dd><input id="category1-filter-option-all" class="filter-select-all"
+                                                                    type="checkbox"> <label
+                                                                    for="category1-filter-option-all">ALL</label></dd>
+                                                            <dd><input id="category1-filter-option1" type="checkbox" value="value"
+                                                                    class="singleitem">
+                                                                <label for="category1-filter-option1">Microsoft</label></dd>
+                                                            <dd><input id="category1-filter-option2" type="checkbox" value="value">
+                                                                <label for="category1-filter-option2">Apple</label></dd>
+                                                            <dd><input id="category1-filter-option3" type="checkbox" value="value">
+                                                                <label for="category1-filter-option3">Samsung</label>
+                                                            </dd>
+                                                            <dd><input id="category1-filter-option4" type="checkbox" value="value">
+                                                                <label for="category1-filter-option4">Dell</label></dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="list-parent col-lg-3">
+                                                        <input type="checkbox" id="category2" class="filter-list-collapse">
+                                                        <label for="category2" class="filter-list-title">Business <i
+                                                                class="toggle-icon"></i></label>
+                                                        <dl class="filters-list">
+                                                            <dd><input id="category2-filter-option-all" class="filter-select-all"
+                                                                    type="checkbox"> <label
+                                                                    for="category2-filter-option-all">ALL</label></dd>
+                                                            <dd><input id="category2-filter-option1" type="checkbox" value="value">
+                                                                <label for="category2-filter-option1">Microsoft</label></dd>
+                                                            <dd><input id="category2-filter-option2" type="checkbox" value="value">
+                                                                <label for="category2-filter-option2">Apple</label></dd>
+                                                            <dd><input id="category2-filter-option3" type="checkbox" value="value">
+                                                                <label for="category2-filter-option3">Samsung</label>
+                                                            </dd>
+                                                            <dd><input id="category2-filter-option4" type="checkbox" value="value">
+                                                                <label for="category2-filter-option4">Dell</label></dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="list-parent col-lg-3">
+                                                        <input type="checkbox" id="category3" class="filter-list-collapse">
+                                                        <label for="category2" class="filter-list-title">Business <i
+                                                                class="toggle-icon"></i></label>
+                                                        <dl class="filters-list">
+                                                            <dd><input id="category3-filter-option-all" class="filter-select-all"
+                                                                    type="checkbox"> <label
+                                                                    for="category3-filter-option-all">ALL</label></dd>
+                                                            <dd><input id="category3-filter-option1" type="checkbox" value="value">
+                                                                <label for="category3-filter-option1">Microsoft</label></dd>
+                                                            <dd><input id="category3-filter-option2" type="checkbox" value="value">
+                                                                <label for="category3-filter-option2">Apple</label></dd>
+                                                            <dd><input id="category3-filter-option3" type="checkbox" value="value">
+                                                                <label for="category3-filter-option3">Samsung</label>
+                                                            </dd>
+                                                            <dd><input id="category3-filter-option4" type="checkbox" value="value">
+                                                                <label for="category3-filter-option4">Dell</label></dd>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="list-parent col-lg-3">
+                                                        <input type="checkbox" id="category4" class="filter-list-collapse">
+                                                        <label for="category2" class="filter-list-title">Business <i
+                                                                class="toggle-icon"></i></label>
+                                                        <dl class="filters-list">
+                                                            <dd><input id="category4-filter-option-all" class="filter-select-all"
+                                                                    type="checkbox"> <label
+                                                                    for="category4-filter-option-all">ALL</label></dd>
+                                                            <dd><input id="category4-filter-option1" type="checkbox" value="value"
+                                                                    checked>
+                                                                <label for="category4-filter-option1">Microsoft</label></dd>
+                                                            <dd><input id="category4-filter-option2" type="checkbox" value="value">
+                                                                <label for="category4-filter-option2">Apple</label></dd>
+                                                            <dd><input id="category4-filter-option3" type="checkbox" value="value"
+                                                                    checked>
+                                                                <label for="category4-filter-option3">Samsung</label>
+                                                            </dd>
+                                                            <dd><input id="category4-filter-option4" type="checkbox" value="value">
+                                                                <label for="category4-filter-option4">Dell</label></dd>
+                                                        </dl>
+                                                    </li>
+                                                </ul>
+                                                <div class="filter-controls">
+                                                    <div class="filter-controls-container">
+                                                        <span class="filter-clear">CLEAR</span>
+                                                        <input class="apply" type="submit" value="Apply">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Filter criteria-->
+                                            <div class="filter-criteria">
+                                                <ul class="filter-criteria-selected">
+                                                    <li class="filter-criteria-item filter-all-selected-item">
+                                                        <span>All Business <i class="drop"></i></span>
+                                                    </li>
+                                                    <li class="filter-criteria-item filter-all-selected-item">
+                                                        <span>All Topic <i class="drop"></i></span>
+                                                    </li>
+                                                    <li class="filter-criteria-item filter-all-selected-item">
+                                                        <span>All Type <i class="drop"></i></span>
+                                                    </li>
+                                                    <li class="filter-criteria-item filter-all-selected-item">
+                                                        <span>All Dates <i class="drop"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+               </div>
+               </div>
+            </div>
+            </main>
+            <!-- /#main -->
+
+        </div>
+        <!-- /#wrapper -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="../scripts/component-cloud-filter.js"></script>
+
+</body>
+
+
+</html>

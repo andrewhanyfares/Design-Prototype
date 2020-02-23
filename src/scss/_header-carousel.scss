@@ -1,0 +1,115 @@
+@import "variables";
+@import "colors";
+
+.highlights-carousel {
+  height: 100%;
+  .slick-list{
+    height: 750px;
+  }
+  .slick-next,
+  .slick-prev {
+    right: 30px;
+    position: absolute;
+    z-index: 1;
+    &:before {
+      content: ">";
+      display: none;
+    }
+  }
+  .slick-dots {
+    bottom:130px;
+    @media screen and (min-width: 992px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 88%;
+      text-align: right;
+    }
+
+    .slick-active {
+      button {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+    li {
+      width: 42px;
+      height: 42px;
+      margin: 0;
+      display: inline-block;
+      vertical-align: top;
+      &:first-child, &:last-child{
+        width:84px;
+      }
+      span {
+        display: inline-block;
+        color: $white;
+        margin-left: $small-margin;
+        font-weight: 600;
+        vertical-align: top;
+        width:40px;
+        height:42px;
+        line-height: 40px;
+        margin:0;
+      }
+      button {
+        display: inline-block;
+        vertical-align: top;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        width: 42px;
+        height: 42px;
+        &:before {
+          content: "";
+          display: inline-block;
+          height: 3px;
+          margin-top: 4px;
+          width: 42px;
+          cursor: pointer;
+          opacity: 0.28;
+          background-color: $white;
+          position: relative;
+          right:0;
+        }
+      }
+    }
+  }
+  .highlights {
+    height: 750px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .highlights-text {
+      position: fixed;
+      top: 360px;
+      color: $white;
+      margin-left: 60px;
+      .small-header {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+      h1 {
+        font-size: 50px;
+        @media screen and (max-width:768px){
+          width: 20%;
+          word-break: break-word;
+        }
+      }
+      .highlight-info {
+        width: 50%;
+        height: 70px;
+        overflow: hidden;
+        @media screen and (max-width:768px){
+          width: 20%;
+          height: 69px;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,138 @@
+.status-component {
+    padding: 21px;
+    box-shadow: 0px 2px 13px #00000014;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+    .status-part {
+      .person-status {
+        display: flex;
+        .profile-img {
+          width: 85px;
+          height: 85px;
+          border-radius: 50px;
+          margin: 0 10px;
+        }
+        .person {
+          padding-top: 15px;
+          margin-left: 10px;
+          h2 {
+            font-size: 22px;
+            margin-bottom: 0;
+          }
+          span {
+            color: #787878;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  
+    .top {
+      margin-bottom: 10px;
+      padding: 10px;
+      .icons {
+        display: inline-block;
+        a {
+          margin-right: 10px;
+          &:hover {
+            text-decoration: none;
+          }
+          &.active {
+            .icon {
+              color: #be9d56;
+            }
+          }
+          .icon {
+            color: #b7b7b7;
+          }
+        }
+      }
+      .posting {
+        float: right;
+  
+        span {
+          font-size: 13px;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+    img{
+        position: absolute;
+        margin: 7px 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+        select {
+          width: 203px;
+          height: 31px;
+          font-size: 11px;
+          color: #828282;
+          -webkit-appearance: none;
+          padding: 0 35px;
+          border-radius: 4px;
+         cursor: pointer;
+          @media screen and (max-width:439px){
+            width: 155px;
+          }
+        }
+  
+        &::after 
+          {
+            content: "\f0dd";
+                font-family: Fontawesome;
+                position: absolute;
+                top: 12px;
+                right: 20px;
+                font-size: 14px;
+                cursor: pointer;
+                color: black;
+                pointer-events: none;
+                @media screen and (max-width:512px){
+                    position: relative;
+                    top: 0;
+                }
+          }
+      }
+    }
+  
+    .post-section {
+      background: #f6f6f6;
+      padding: 10px 20px 15px;
+      margin: 20px 10px 0;
+      .post-wrapper {
+        display: flex;
+        .posting {
+          text-align: right;
+        }
+        input {
+          width: 104%;
+          height: 85px;
+          padding: 12 115px 0 50px;
+          font-size: 14px;
+          border: 1px solid #e8e8e8;
+        }
+  
+        .post {
+          cursor: pointer;
+          background: #e03a3e; 
+          height: 29px;
+          width: 95px;
+          color: #fff;
+          margin-left: -108px;
+          margin-top: 45px;
+          padding: 0;
+          z-index: 10;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          margin-right: -42px;
+          z-index: 10;
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+  

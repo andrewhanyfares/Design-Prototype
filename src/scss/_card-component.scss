@@ -1,0 +1,109 @@
+@import "colors";
+@import "variables";
+
+.card-list {
+  /*add general component styles here*/
+
+  padding-bottom: $extraextralarge-padding;
+  width: 100%;
+  background: $grey-background;
+  padding: $extraextralarge-padding;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    column-gap: 30px;
+    padding: 0;
+    @media (min-width: 1200px) {
+      column-count: 2;
+    }
+
+    li {
+      margin-bottom: $extralarge-margin;
+      border: 0;
+      border-radius: 0;
+      display: inline-block;
+      width: 100%;
+      .card-wrapper {
+        background: $secondary-color;
+        box-shadow: 0px 20px 60px -30px $shadow;
+
+        .card-img-wrapper {
+            overflow: hidden;
+            position: relative;
+            a {
+              display: block;
+        
+              &:after {
+                content: "";
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: absolute;
+                opacity: 0;
+                background: $shadow;
+                transition: all 0.2s ease-in-out;
+                transition-delay: 0.25s;
+              }
+        
+              &:hover {
+                &:after {
+                  opacity: 1;
+                }
+              }
+            }
+            .card-img {
+                img {
+                  width: 100%;
+                }
+              }
+          }
+
+          .card-text {
+            padding: $middle-padding;
+            h3 {
+              font-size: 17.5px;
+              margin-bottom: 12px;
+              color: $black-text;
+            }
+            .person-title {
+              display: flex;
+              margin-bottom: $middle-margin;
+              img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                margin-right: $small-margin;
+              }
+              h2 {
+                font-size: 16px;
+                margin-bottom: 0px;
+              }
+              span {
+                font-size: 14px;
+              }
+            }
+            .category {
+                span {
+                  margin-right: $large-margin;
+                  border-left: 3px solid;
+                  padding-left: $extrasmall-padding;
+                  &.Services {
+                    border-color: $light-green;
+                  }
+                  &.Business {
+                    border-color: $orange;
+                  }
+                }
+              }
+          }
+        
+      }
+
+    }
+  }
+}

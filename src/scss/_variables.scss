@@ -1,0 +1,35 @@
+
+//margins
+$extrasmall-margin:5px;
+$small-margin:10px;
+$middle-margin:15px;
+$large-margin:20px;
+$extralarge-margin:30px;
+
+//paddings 
+$extrasmall-padding:5px;
+$small-padding:10px;
+$middle-padding:15px;
+$large-padding:20px;
+$extralarge-padding:25px;
+$extraextralarge-padding:30px;
+
+
+//font-sizes
+$font-small:12px;
+$font-normal:14px;
+$font-medium:16px;
+$font-big:18px;
+$font-extrabig:24px;
+
+$font-family-base: "Lato" !default;
+
+$font-size-base: 14px !default;
+
+// Headlines Font Size
+$h1-font-size: $font-size-base * 4.3 !default;
+$h2-font-size: $font-size-base * 2.5 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;

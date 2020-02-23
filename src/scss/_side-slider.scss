@@ -1,0 +1,195 @@
+@import "colors";
+@import "variables";
+
+.slider-wrapper
+{
+    margin-top: 20px;
+    >div 
+    {
+        width: 95%;
+        height: 10px;
+        background: $light-blue 0% 0% no-repeat padding-box;
+        opacity: 0.4;
+        margin: auto;
+    
+        &:last-child 
+        {
+            width: 90%;
+            height: 6px;  
+            background: $progress-blue 0% 0% no-repeat padding-box;
+            opacity: 0.32;
+        }
+    }
+}
+.side-slider {
+ 
+  padding-left: 0;
+  margin-bottom: 0;
+  
+  .slick-arrow 
+  {
+      z-index: 1;
+      background-color: inherit;
+      color: $secondary-color;
+      opacity: 1;
+      
+      &.slick-next 
+      {
+          right: 25px;
+          &::before {
+            content: "\f054";
+            font-family: fontawesome;     
+          }
+      }
+      &.slick-prev 
+      {
+          left: 25px;
+          &::before {
+            content: "\f053";
+            font-family: fontawesome;
+          }
+    
+      }
+  }
+  li {
+    background-color: $progress-blue;
+        padding: 2% 3%;
+    
+    @media (max-width: 992px) {
+        padding: 0.5% 4%;
+    }
+    .content {
+      display: flex;
+      margin-bottom: $middle-margin;
+      @media (max-width: 992px) {
+        margin-bottom: $extrasmall-margin;
+    }
+      >div 
+      {
+          padding-left: $large-padding;
+          @media (max-width: 1200px) {
+            text-align: center;
+        }
+          @media (max-width: 992px) {
+            margin-top: $extrasmall-margin;
+           
+        }
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-right: 10px;
+        margin-top: $extrasmall-margin;
+        @media (max-width: 1500px) {
+          width: 80px;
+          height: 80px;
+      }
+        @media (max-width: 1200px) {
+          margin: auto;
+          width: 65px;
+          height: 65px;
+      }
+        @media (max-width: 992px) {
+          width: 60px;
+          height: 60px;
+      }
+       
+        
+      
+      }
+
+      small,
+      span {
+        display: block;
+      }
+
+      small 
+      {
+        @media (min-width: 1200px) {
+            font-size: 16px;
+        }
+        @media (max-width: 992px) {
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+      }
+      span 
+      {
+         
+          color:$secondary-color;
+          @media (min-width: 1200px) {
+            font-size: 21px;
+        }
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+          &.year
+          {
+              
+              font-weight: bold;
+              @media (min-width: 1440px) {
+                font-size: 35px;
+            }
+            @media (max-width: 992px) {
+                font-size: 18px;
+            }
+
+          }
+      }
+    }
+
+    .buttons 
+    {
+        @media (min-width: 1440px) {
+            margin-left: 40px; 
+        }
+       
+        @media (min-width: 992px) {
+            margin-left: 15%; 
+        }
+
+        button {
+            border: 1px solid $secondary-color;
+            border-radius: 4px; 
+            background-color: inherit;
+            color: $secondary-color;
+            padding: $extrasmall-padding $middle-padding;
+            min-width: 95px;
+           font-size: 12px;
+           font-weight: bold;
+           margin-right: $small-margin;
+           margin-bottom: $extrasmall-margin;
+
+           @media (max-width: 1024px) {
+            margin-right: 5px;
+            min-width: 80px;
+            padding: 5px;
+           }
+            @media (max-width: 992px) {
+              display: block;
+              margin: auto;
+              margin-bottom: 5px;
+        }
+      
+          &.next
+          {
+              background-color: $secondary-color;
+              color: $progress-blue;
+          }
+
+          @media (min-width:768) and (max-width: 992px) {
+            padding: 3px $middle-padding;
+        }
+          
+
+          }
+    }
+  
+  }
+}

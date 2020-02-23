@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General meta tags needed-->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- If you want custom browser colors on mobile -->
+    <meta name="theme-color" content="#1843c1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
+
+  
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="dist/css/app.css?cb=1572357596194">
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="dist/vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="dist/vendor/slick/slick-theme.css" />
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+
+                    <div class="logo">
+                        <img src="dist/images/itworx-logo.png">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 header-actions">
+                    <ul>
+                        <li>
+                            <em class="icon-search"></em>
+                        </li>
+                        <li>
+                            <em class="icon-app"></em>
+                        </li>
+                        <li>
+                            <em class="icon-star"></em>
+                        </li>
+                        <li class="notification">
+                            <span class="notif-counter">5</span>
+                            <em class="icon-notification"></em>
+                        </li>
+                        <li class="profile">
+                            <img src="dist/images/mark.jpg">
+                        </li>
+                        <li>
+                            <em class="icon-add"></em>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <span>Home</span>
+                <span class="icon-right-arrow"></span>
+                <span>Day To Day</span>
+                <span class="icon-right-arrow"></span>
+                <span>Travel</span>
+            </div>
+            <div class="top-section col-12">
+                <ul class="row">
+                    <li class="col-lg-6">
+                        <div class="row details">
+                            <div class=" card-img col-md-3 ">
+                                <img src="dist/images/Image 8.png">
+                            </div>
+                            <div class="card-text col-md-9">
+                                <h3>Courtyard Atlanta NE/Duluth Sugarloaf</h3>
+                                <div class="hotel-rating">
+                                    <i class="icon icon-star active "></i>
+                                    <i class="icon icon-star active "></i>
+                                    <i class="icon icon-star active "></i>
+                                    <i class="icon icon-star"></i>
+                                </div>
+                                <span>Thu, Oct 3 - to Sun, Oct 6</span>
+                                <a href="#">Change hotel</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="col-lg-6">
+                        <div class="row details">
+                            <div class="card-img col-md-3">
+                                <img src="dist/images/Logo.svg">
+                            </div>
+                            <div class="card-text col-md-9">
+                                <h3>United</h3>
+                                <span>3:00pm BDL to 7:04pm ATL Thu, Oct 3</span>
+                                <a href="#">Change flight</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="title-section">
+                <div class="row">
+                    <div class="col-md-8">
+                            <h2>Select your departure to Atlanta</h2>
+                            <span>Thu, Oct 3</span>
+                    </div>
+                      
+                        <div class="col-md-4">
+                                <p class="change">Change <a>departure</a> or <a>return</a> airport</p>
+                        </div>
+                        
+                </div> 
+                <p>The trip prices shown are per person and include Flight +plus Hotel, taxes &amp; fees. Flights
+                    include e-tickets,
+                    but do not include baggage fees or other fees charged directly by the airline.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="flights-filter">
+                        <div class="dropdown-filter-container">
+                            <h3>SORT BY</h3>
+                            <input class="textbox" type="text">
+                            <button class="btn search-hotel">Search</button>
+                            <h3>Filter property by</h3>
+                            <h6>Price per person ( Flight + Hotel)</h6>
+                            <div class="min-max">
+                                <div class="min">
+                                    <label for="min">Min($)</label>
+                                    <input class="textbox" id="min" type="text">
+                                </div>
+                                <div class="max">
+                                    <label for="max">Max ($)</label>
+                                    <input class="textbox" id="max" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <h3>Property Class</h3>
+                            <div class="check-boxes">
+                                <div class="choice">
+                                    <label class="container checkbox-label">5 Stars
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="choice">
+                                    <label class="container checkbox-label">4 Stars
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label class="container checkbox-label">3 Stars
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-container">
+                            <h3>Property Type</h3>
+                            <div class="check-boxes">
+                                <div class="choice">
+                                    <label class="container checkbox-label">Hotel
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="choice">
+                                    <label class="container checkbox-label">Appartment
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="choice">
+                                    <label class="container checkbox-label">Private Vacation Home
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label class="container checkbox-label">Motel
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label class="container checkbox-label">Apart-hotel
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="checkbox-more">Show more</a>
+
+
+                    </div>
+                </div>
+                <div class="flights col-lg-8 col-sm-12">
+                    <ul class="col-sm-12">
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4 ">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5 ">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5 ">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4 ">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5 ">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4 ">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4 ">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5 ">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5 ">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4 ">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5 ">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                        <li>
+                            <div class="row details">
+                                <div class="col-lg-4 ">
+                                    <span>10:30am to- 2:42pm</span>
+                                    <span>United</span>
+                                    <p>Satisfactory Flight (6.1/10)</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <span class="icons-by-side">4h 12m (1 stop)</span><em class="icon icon-wifi"></em><em class="icon icon-play"></em>
+                                    <p>BDL - 57m in IAD - ATL </p>
+                                    <p>United 6201 operated by Mesa Airlines DBA United</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <span>4 left</span>
+                                    <a>Select</a>
+                                </div>
+
+
+                            </div>
+                            <p class="border-bottom">
+                                Flight arrives Oct 4; package includes 2 hotel nights instead of 3.
+                            </p>
+                            <p>Details & baggage fees</p>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

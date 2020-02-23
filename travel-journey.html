@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General meta tags needed-->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- If you want custom browser colors on mobile -->
+    <meta name="theme-color" content="#1843c1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
+
+  
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="dist/css/app.css?cb=1572357596194">
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="dist/vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="dist/vendor/slick/slick-theme.css" />
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+
+                    <div class="logo">
+                        <img src="dist/images/itworx-logo.png">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 header-actions">
+                    <ul>
+                        <li>
+                            <em class="icon-search"></em>
+                        </li>
+                        <li>
+                            <em class="icon-app"></em>
+                        </li>
+                        <li>
+                            <em class="icon-star"></em>
+                        </li>
+                        <li class="notification">
+                            <span class="notif-counter">5</span>
+                            <em class="icon-notification"></em>
+                        </li>
+                        <li class="profile">
+                            <img src="dist/images/mark.jpg">
+                        </li>
+                        <li>
+                            <em class="icon-add"></em>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <span>Home</span>
+                <span class="icon-right-arrow"></span>
+                <span>Day To Day</span>
+                <span class="icon-right-arrow"></span>
+                <span>Travel</span>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="flights-filter">
+                        <div class="dropdown-filter-container">
+                            <h3>SORT BY</h3>
+                            <input class="textbox" type="text">
+                            <button class="btn search-hotel">Search</button>
+                            <h3>Filter property by</h3>
+                            <h6>Price per person ( Flight + Hotel)</h6>
+                            <div class="min-max">
+                                <div class="min">
+                                    <label for="min">Min($)</label>
+                                    <input class="textbox" id="min" type="text">
+                                </div>
+                                <div class="max">
+                                    <label for="max">Max ($)</label>
+                                    <input class="textbox" id="max" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <h3>Property Class</h3>
+                            <div class="check-boxes">
+                                <div class="choice">
+                                    <label class="container checkbox-label">5 Stars
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="choice">
+                                    <label class="container checkbox-label">4 Stars
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label class="container checkbox-label">3 Stars
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-container">
+                            <h3>Property Type</h3>
+                            <div class="check-boxes">
+                                <div class="choice">
+                                    <label class="container checkbox-label">Hotel
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="choice">
+                                    <label class="container checkbox-label">Appartment
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="choice">
+                                    <label class="container checkbox-label">Private Vacation Home
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label class="container checkbox-label">Motel
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="choice">
+                                    <label class="container checkbox-label">Apart-hotel
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="checkbox-more">Show more</a>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="hotels">
+                        <div class="tabs">
+                            <ul id="navBar" class="nav nav-tabs justify-content-center row">
+                                <li class="nav-item">
+                                    <a href="#content1" class="nav-link active" role="tab" data-toggle="tab"
+                                        aria-selected="true">
+                                        Featured
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#content2" class="nav-link" role="tab" data-toggle="tab"
+                                        aria-selected="false">
+                                        Price
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#content2" class="nav-link" role="tab" data-toggle="tab"
+                                        aria-selected="false">
+                                        Distance from Downtown
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#content2" class="nav-link" role="tab" data-toggle="tab"
+                                        aria-selected="false">
+                                        Guest Rating
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#content2" class="nav-link" role="tab" data-toggle="tab"
+                                        aria-selected="false">
+                                        Vacation Rentals
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="row cards">
+                            <li class="col-md-12">
+                                <a href="#">
+                                    <div class="card-wrapper row">
+                                        <div class="card-img col-md-3">
+                                            <img
+                                                src="dist/images/images_Hyatt-Atlanta-Perimeter-at-Villa-Christina@2x.png">
+                                        </div>
+                                        <div class="card-text  col-md-6">
+                                            <h3>Courtyard Atlanta NE/Duluth Sugarloaf</h3>
+                                            <div class="hotel-rating">
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star"></i>
+                                            </div>
+                                            <div class="filter-criteria">
+                                                <ul>
+                                                    <li>
+                                                        <span>Under Company Agreement</span>
+                                                    </li>
+                                                    <li class="active">
+                                                        <span>Within Budget</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h4>Duluth</h4>
+                                            <p>Free cancelation</p>
+                                            <div class="flight">
+                                                <em class="icon icon-plane"></em>
+                                                <p>Economy/Coach flights included in price</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-text  col-md-3">
+                                            <div>
+                                                <em class="icon icon-eye"></em>
+                                                <span>Viewed</span>
+                                            </div>
+                                            <div>
+                                                <span>4.7/5</span>
+                                                <span>Exceptional!</span>
+                                                <span>(275 reviews)</span>
+                                            </div>
+                                            <div class="budget">
+                                                <span>+200$</span>
+                                                <span>Per person includes flight + hotel</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="col-md-12">
+                                <a href="#">
+                                    <div class="card-wrapper row">
+                                        <div class="card-img col-md-3">
+                                            <img
+                                                src="dist/images/images_Hyatt-Atlanta-Perimeter-at-Villa-Christina@2x.png">
+                                        </div>
+                                        <div class="card-text  col-md-6">
+                                            <h3>Courtyard Atlanta NE/Duluth Sugarloaf</h3>
+                                            <div class="hotel-rating">
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star"></i>
+                                            </div>
+                                            <div class="filter-criteria">
+                                                <ul>
+                                                    <li>
+                                                        <span>Under Company Agreement</span>
+                                                    </li>
+                                                    <li class="active">
+                                                        <span>Within Budget</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h4>Duluth</h4>
+                                            <p>Free cancelation</p>
+                                            <div class="flight">
+                                                <em class="icon icon-plane"></em>
+                                                <p>Economy/Coach flights included in price</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-text  col-md-3">
+                                            <div>
+                                                <em class="icon icon-eye"></em>
+                                                <span>Viewed</span>
+                                            </div>
+                                            <div>
+                                                <span>4.7/5</span>
+                                                <span>Exceptional!</span>
+                                                <span>(275 reviews)</span>
+                                            </div>
+                                            <div class="budget">
+                                                <span>+200$</span>
+                                                <span>Per person includes flight + hotel</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-md-12">
+                                <a href="#">
+                                    <div class="card-wrapper row">
+                                        <div class="card-img col-md-3">
+                                            <img
+                                                src="dist/images/images_Hyatt-Atlanta-Perimeter-at-Villa-Christina@2x.png">
+                                        </div>
+                                        <div class="card-text  col-md-6">
+                                            <h3>Courtyard Atlanta NE/Duluth Sugarloaf</h3>
+                                            <div class="hotel-rating">
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star"></i>
+                                            </div>
+                                            <div class="filter-criteria">
+                                                <ul>
+                                                    <li>
+                                                        <span>Under Company Agreement</span>
+                                                    </li>
+                                                    <li class="active">
+                                                        <span>Within Budget</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h4>Duluth</h4>
+                                            <p>Free cancelation</p>
+                                            <div class="flight">
+                                                <em class="icon icon-plane"></em>
+                                                <p>Economy/Coach flights included in price</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-text  col-md-3">
+                                            <div>
+                                                <em class="icon icon-eye"></em>
+                                                <span>Viewed</span>
+                                            </div>
+                                            <div>
+                                                <span>4.7/5</span>
+                                                <span>Exceptional!</span>
+                                                <span>(275 reviews)</span>
+                                            </div>
+                                            <div class="budget">
+                                                <span>+200$</span>
+                                                <span>Per person includes flight + hotel</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-md-12">
+                                <a href="#">
+                                    <div class="card-wrapper row">
+                                        <div class="card-img col-md-3">
+                                            <img
+                                                src="dist/images/images_Hyatt-Atlanta-Perimeter-at-Villa-Christina@2x.png">
+                                        </div>
+                                        <div class="card-text  col-md-6">
+                                            <h3>Courtyard Atlanta NE/Duluth Sugarloaf</h3>
+                                            <div class="hotel-rating">
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star"></i>
+                                            </div>
+                                            <div class="filter-criteria">
+                                                <ul>
+                                                    <li>
+                                                        <span>Under Company Agreement</span>
+                                                    </li>
+                                                    <li class="active">
+                                                        <span>Within Budget</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h4>Duluth</h4>
+                                            <p>Free cancelation</p>
+                                            <div class="flight">
+                                                <em class="icon icon-plane"></em>
+                                                <p>Economy/Coach flights included in price</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-text  col-md-3">
+                                            <div>
+                                                <em class="icon icon-eye"></em>
+                                                <span>Viewed</span>
+                                            </div>
+                                            <div>
+                                                <span>4.7/5</span>
+                                                <span>Exceptional!</span>
+                                                <span>(275 reviews)</span>
+                                            </div>
+                                            <div class="budget">
+                                                <span>+200$</span>
+                                                <span>Per person includes flight + hotel</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col-md-12">
+                                <a href="#">
+                                    <div class="card-wrapper row">
+                                        <div class="card-img col-md-3">
+                                            <img
+                                                src="dist/images/images_Hyatt-Atlanta-Perimeter-at-Villa-Christina@2x.png">
+                                        </div>
+                                        <div class="card-text  col-md-6">
+                                            <h3>Courtyard Atlanta NE/Duluth Sugarloaf</h3>
+                                            <div class="hotel-rating">
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star active "></i>
+                                                <i class="icon icon-star"></i>
+                                            </div>
+                                            <div class="filter-criteria">
+                                                <ul>
+                                                    <li>
+                                                        <span>Under Company Agreement</span>
+                                                    </li>
+                                                    <li class="active">
+                                                        <span>Within Budget</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h4>Duluth</h4>
+                                            <p>Free cancelation</p>
+                                            <div class="flight">
+                                                <em class="icon icon-plane"></em>
+                                                <p>Economy/Coach flights included in price</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-text  col-md-3">
+                                            <div>
+                                                <em class="icon icon-eye"></em>
+                                                <span>Viewed</span>
+                                            </div>
+                                            <div>
+                                                <span>4.7/5</span>
+                                                <span>Exceptional!</span>
+                                                <span>(275 reviews)</span>
+                                            </div>
+                                            <div class="budget">
+                                                <span>+200$</span>
+                                                <span>Per person includes flight + hotel</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+.view{
+  bottom: 160px;
+  position: relative;
+}
+.day-to-day {
+  background: $white;
+  box-shadow: 0px 2px 13px $shadow;
+  border: 1px solid $light-grey;
+  padding: $extralarge-padding;
+  margin-top: $extralarge-margin;
+  padding-bottom: 0;
+  h5 {
+    color: $red-colour;
+  }
+
+  .journey-planner {
+    border: 1px solid $light-grey;
+    padding: $extralarge-padding;
+    height: 100%;
+    @media screen and (max-width: 991px) {
+      margin-bottom: $large-margin;
+    }
+    .icon-plane {
+      font-size: $font-extrabig;
+      font-weight: 600;
+      .title {
+        font-weight: 600;
+        color: $black;
+        font-size: $font-extrabig;
+        font-family: Lato;
+      }
+      &:before {
+        color: $red-colour;
+        margin-right: $small-margin;
+        margin-top: 2px;
+      }
+    }
+
+    .reservation-tabs {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin-top: $extralarge-margin;
+      @media screen  and (max-width:508px) {
+        display:block;
+      }
+      .tabs {
+        a {
+          margin: 0 10px;
+          font-size: 13px;
+          font-weight: 600;
+          padding: $extrasmall-padding $middle-padding;
+          margin-bottom: 0;
+          @media screen and (min-width:992px) and (max-width:1399px){
+            padding: 5px 5px;
+            margin: 0px;
+          }
+          &:hover,
+          &:focus,
+          &:active,
+          &:visited {
+            border-radius: 18px;
+            border: 1px solid $input-border;
+            background: $light-grey;
+            margin-bottom: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .location {
+      display: flex;
+      .icon-swap {
+        font-size: 24px;
+        border: 1px solid $input-border;
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        color: $dark-gray;
+        background: $white;
+        &::before {
+          position: relative;
+          top: 7px;
+          margin: $extrasmall-margin;
+        }
+      }
+      .starting,
+      .destination {
+        position: relative;
+        width: 100%;
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+
+        input {
+          border: 1px solid $input-border;
+          border-radius: 4px;
+          font-size: $font-small;
+          padding: $small-padding 0px $small-padding 33px;
+          width: 100%;
+          @media screen and (max-width: 991px) {
+            padding: $small-padding 40px;
+          }
+        }
+      }
+      .destination {
+        right: 6px;
+        input {
+          background-image: url(file:///D:/New%20hub/page/worxzen/dist/images/pin.svg);
+          background-repeat: no-repeat;
+          background-position: left 10px bottom 9px;
+          background-size: 24px 24px;
+        }
+      }
+      .starting {
+        left: 6px;
+        input {
+          background: url(file:///D:/New%20hub/page/worxzen/dist/images/location.svg); 
+          background-repeat: no-repeat;
+          background-position: left 10px bottom 9px;
+          background-size: 24px 24px;
+        }
+      }
+    }
+
+    .date {
+      display: flex;
+      margin: $middle-margin 0;
+      .date-picker {
+        border: 1px solid #e8e8e8;
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 10px 0 10px 15px;
+        width: 100%;
+        margin: 5px;
+        background: url(/dist/images/Calendar.png);
+        background-repeat: no-repeat;
+        background-position: right 10px bottom 9px;
+        background-size: 24px 24px;
+      }
+    }
+    .search-btn-container{
+      margin: 5px;
+    .search-btn {
+      background: $red-colour;
+      text-align: center;
+      width: 100%;
+      display: block;
+      padding: $small-padding $extraextralarge-padding;
+      margin-top: $extralarge-margin;
+      border-radius: 5px;
+      font-size: $font-small;
+      color: $white;
+      font-weight: 600;
+      cursor: pointer;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+  }
+  .day-to-day-carousel {
+    border: 1px solid $input-border;
+    padding: $extraextralarge-padding;
+    height: 100%;
+    .icon-respect {
+      font-size: $font-extrabig;
+      font-weight: 600;
+      .title {
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 0;
+        font-family: Lato;
+      }
+      &:before {
+        color: $red-colour;
+        margin-right: $small-margin;
+        margin-top: 2px;
+      }
+    }
+
+    .day-carousel {
+      position: relative;
+      width: 100%;
+      .slick-arrow {
+        display: none;
+      }
+      .slick-dots {
+        top: 250px;
+        .count {
+          display: none;
+        }
+        .slick-active {
+          button {
+            &:before {
+              color: $black;
+              opacity: 1;
+              cursor: pointer;
+              font-size: 60px;
+            }
+          }
+        }
+        li {
+          width: 5px;
+          height: 60px;
+          button {
+            &:before {
+              content: ".";
+              cursor: pointer;
+              font-size: 60px;
+              opacity: 0.28;
+              color: $black;
+            }
+          }
+        }
+      }
+      .day-carousel-slide {
+        display: block;
+        img {
+          width: 100%;
+          padding: $extraextralarge-padding 0px 0px 0px;
+          height: 181px;
+          @media screen and (max-width: 991px) {
+            width: 100%;
+          }
+        }
+        .carousel-text {
+          width: 100%;
+          height: 100%;
+          color: $black;
+          background: $white;
+          padding: $middle-padding 0px;
+          @media screen and (max-width: 991px) {
+            width: 100%;
+          }
+          .carousel-header {
+            font-size: $font-medium;
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+          .text {
+            color: $text-basic;
+            font-size: $font-small;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .university {
+    border: 1px solid $light-grey;
+    padding: $extraextralarge-padding;
+    margin-top: $large-margin;
+    margin-bottom: $middle-margin;
+    .icon-learning {
+      font-size: $font-extrabig;
+
+      .title {
+        font-weight: 600;
+        color: $black-text;
+        margin-bottom: 0;
+        font-family: Lato;
+      }
+      &:before {
+        color: $red-colour;
+        margin-right: $small-margin;
+        margin-top: 2px;
+      }
+    }
+    .statistics-container {
+      margin-top: $extralarge-margin;
+       @media screen and (max-width: 642px) {
+        display: block;
+      }
+      .statistics {
+        display: flex;
+        @media screen and (max-width: 642px) {
+          margin: $large-margin 0;
+        }
+        .info {
+          position: relative;
+          top: 20px;
+          margin-left: $middle-margin;
+          .title {
+            font-weight: 600;
+            font-size: 13px;
+            color: $black;
+            background: transparent;
+            margin-bottom: 0;
+            font-family: Lato;
+          }
+          .course-percent {
+            font-weight: 800;
+            font-size: $font-extrabig;
+            color: $black;
+            background: transparent;
+            height: 2rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .course-info {
+      margin-top: 40px;
+      .course-progress {
+        padding: $middle-padding;
+        margin: $small-margin;
+        border: 1px solid $input-border;
+        width: calc(34% - 27px);
+        @media screen and (max-width: 768px) and (min-width: 550px) {
+          width: calc(50% - 20px);
+        }
+        @media screen and (max-width: 550px) {
+          width: 100%;
+        }
+        .course-name {
+          font-weight: 600;
+        }
+        .comment {
+          color: $dark-gray;
+          font-size: $font-small;
+        }
+        .progress {
+          height: 3px;
+          .progress-bar {
+            background-color: $progress-blue;
+          }
+        }
+      }
+    }
+  }
+}
+.ui-datepicker {
+  background: $white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2px 13px $shadow;
+  .ui-datepicker-header {
+    border: none;
+    background: $white;
+  }
+  .ui-datepicker-calendar {
+    .ui-datepicker-current-day {
+      .ui-state-active {
+        background: $red-colour;
+        border: 1px solid $white;
+        background: $red-colour;
+        color: $white;
+        border-radius: 5px;
+        text-align: center;
+      }
+    }
+    .ui-datepicker-days-cell-over,
+    .ui-datepicker-today {
+      a {
+        border: 1px solid $white;
+        background: $red-colour;
+        color: $white;
+        border-radius: 5px;
+        text-align: center;
+        opacity: 0.5;
+      }
+    }
+  }
+  .ui-state-default {
+    border: 1px solid $white;
+    background: $white;
+    color: $black;
+    border-radius: 5px;
+    text-align: center;
+    &:hover {
+      color: $white;
+      background: $red-colour;
+      border: 1px solid $white;
+      border-radius: 5px;
+    }
+  }
+  .ui-datepicker-title {
+    color: $red-colour;
+  }
+}

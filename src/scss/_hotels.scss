@@ -1,0 +1,213 @@
+@import "colors";
+@import "variables";
+
+.hotels{
+    @media (max-width: 991px)
+    {
+      margin-top: $large-margin;
+    }
+    .tabs 
+    {
+        border: 1px solid $gray;
+        @media screen and (max-width:991px) {
+            margin:0;
+        }
+        .nav-tabs{
+            border:none;
+            width: 95%;
+            margin: auto;
+            .nav-item 
+            {
+                margin-right: $small-margin;
+                .nav-link
+                {
+                    padding: $middle-padding $small-padding;
+                    border: none;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: $black;
+                    font-weight: 700;
+                    &.active 
+                    {
+                        color: $red-colour !important;
+                        transition: color 0.5s ease-in-out;
+                        border-bottom: 2px solid $red-colour !important;   
+                    }
+                    &:hover {
+                        color: $red-colour;
+                        background-color: $secondary-color;
+                    }            
+                }
+    
+            }
+        }
+    }
+   
+    .cards 
+    {
+        list-style: none;
+        margin-top: $middle-margin;
+        padding: 0;
+        margin: 0;
+        li 
+        {
+           
+            padding: 0;
+            a 
+            {
+                &:hover 
+                {
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+
+                .card-wrapper 
+                {  
+                 padding: $extralarge-padding 0;
+              
+                border-bottom: 1px solid $header-bottom-border;
+                .card-img
+                {
+                    height: 165px;
+                   
+                    @media screen and (min-width:991px) {
+                       // padding-left: 0;
+                    }
+                   img 
+                   {
+                     width: 100%; 
+                     height: 100%;
+                   }
+                }
+               
+                .card-text 
+                {
+                    padding-top:$middle-padding;
+                   @media (min-width: 992px)
+                   {
+                       padding-top: 0;
+                     //  padding-right: 0;
+                   }
+                
+                       .filter-criteria 
+                       {
+                           padding-top: 0;
+                           ul 
+                           {
+                             
+                              margin-bottom: $small-margin;
+                              li 
+                              {
+                               border: 1px solid;
+                               width: auto;
+                               font-size: 13px;
+                               padding: $extrasmall-padding 12px;
+                               margin-top: $small-margin;
+                               &.active 
+                               {
+                                   color: $rating-color;
+                                   background-color: $secondary-color;
+                               }
+                              }
+                           }
+                       }
+                        .flight
+                        {
+                            display: flex;
+                            margin-top: $small-margin;
+                            .icon
+                            {
+                                margin-right: $small-margin;
+                                padding-top: $extrasmall-padding;
+                                color: $icon-black;
+                            }
+                            p 
+                            {
+                                color: $black;
+                            }
+                        }
+     
+                        h3 
+                        {
+                            font-size: 16px;
+                            color: $black;
+                            font-weight: bold;
+                        }
+                        h4 
+                        {
+                            font-size: 14px;
+                            color: $black;
+                            font-weight: bold;
+                        }
+                         p 
+                         {
+                             color: $dark-green;
+                             font-weight: bold;
+                             font-size: 14px;
+                             margin-bottom: 0;
+                         }
+     
+                       &:last-of-type
+                       {
+                           text-align: right;
+                           color: $black;
+                           font-weight: bold;
+                           @media (max-width: 767px)
+                           {  
+                               text-align: left;    
+                           }
+                           span 
+                           {
+                               display: block;
+                           }
+                           div 
+                           {
+                            margin-bottom: $middle-margin;
+                            
+                             &:nth-child(1) 
+                             {
+                                 span 
+                                 {
+                                     display: inline;
+                                 }
+                             }
+                             &.budget
+                             {
+                                 margin-bottom: 0;
+                                 span 
+                                 {
+                                     &:nth-child(1)
+                                     {
+                                         color:$rating-color;
+                                     }  
+                                     &:last-child
+                                     {
+                                        font-weight: 100;
+                                     }     
+                                 }
+                             }
+                             
+                           }
+                       }  
+                    }   
+             }
+            }
+           
+        &:last-child 
+        {
+            border-bottom: none;
+        }
+
+        &:first-child 
+        {
+            margin-top: $large-margin;
+        }
+        }
+        
+    }
+}  
+
+
+
+
+  

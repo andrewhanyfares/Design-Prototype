@@ -1,0 +1,136 @@
+/*add general styles here*/
+@media (min-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.home-page main 
+{
+  margin-top: -150px;
+}
+
+.list-title {
+  color: $red-colour;
+  //margin-left: $extrasmall-margin;
+  .icon {
+    color: $icon-black;
+    margin-right: $extrasmall-margin;
+    font-size: 20px;
+  }
+}
+
+.see-all-section {
+  padding-bottom: $middle-padding;
+  &.day-section,
+  &.apps-section,
+  &.moments-section {
+    text-align: end;
+  }
+  .see-all {
+    font-size: 17px;
+    font-weight: 700;
+    color: $red-colour !important;
+  }
+}
+
+.welcome-block {
+  box-shadow: 0px 2px 13px $shadow;
+  padding: 10px;
+  position: relative;
+  background: $white;
+  display: flex;
+  padding: $extrasmall-padding 40px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  @media screen  and (max-width:768px){ 
+    display: block;
+  }
+  .layout-controls {
+    display: flex;
+    align-items: center;
+    @media screen  and (max-width:768px){
+      display: flex;
+    }
+  }
+  .welcome-text {
+    color: $black;
+    font-weight: 600; 
+    padding-right: $large-padding;
+    margin-top: $extrasmall-margin;
+
+  }  
+  .layout-btns {
+    display: flex;
+    align-items: center;
+    border: 1px solid $border-gray;
+    border-radius: 6px;
+    overflow: hidden;
+    a {
+      padding: 0;
+      color: $layout-buttons-color;
+      text-decoration: none;
+      width: 40px;
+      height: 35px;
+      text-align: center;
+      line-height: 33px;
+      &:hover,
+      &:focus,
+      &:visited {
+        background: $red-colour;
+        text-decoration: none;
+        cursor: pointer;
+        color: $white;
+      }
+    }
+  }
+}
+
+.filter-criteria {
+  padding-top: $small-padding;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    li {
+      padding: $extrasmall-padding;
+      border: 1px solid;
+      color: $light-blue;
+      margin-right: $small-margin;
+      background-color: $powder-blue;
+      width: 106px;
+      height: 29px;
+      text-align: center;
+      border-radius: 30px;
+      margin-top: $small-margin;
+      .drop {
+        margin-left: $extrasmall-margin;
+        cursor: pointer;
+        font-style: normal;
+        &::after {
+          content: "x";
+        }
+      }
+    }
+  }
+}
+
+.hotel-rating 
+{
+    font-size: 13px;
+    .active 
+    {
+     color: $rating-color;
+    }
+    .icon-star
+    {
+     -webkit-text-stroke: 1px $rating-color;
+     color: $secondary-color;
+     &.active 
+    {
+     color: $rating-color;
+    }
+    }
+}

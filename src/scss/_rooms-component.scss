@@ -1,0 +1,127 @@
+@import "colors";
+@import "variables";
+
+.rooms {
+  padding: $large-padding $extralarge-padding;
+  box-shadow: 0px 0px 13px 2px $shadow;
+  margin-top: $extralarge-margin;
+  .title {
+    color: $red-colour;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 15px;
+    text-transform: uppercase;
+  }
+  h5 {
+    background-color: $grey-background;
+    padding: 12px $extralarge-padding;
+    margin: 0 -25px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 40px;
+  }
+  .cards {
+    list-style: none;
+    margin-top: 15px;
+    margin: 0;
+    > li {
+      border-bottom: 1px solid $header-bottom-border;
+      padding: $extralarge-padding 0px;
+      .card-img {
+        height: 160px;
+        @media (min-width: 768px) {
+          padding-left:0 ;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card-text {
+        @media (max-width: 768px) {
+          padding-top: 15px;
+        }
+
+        ul {
+          display: flex;
+          list-style: none;
+          padding: 0;
+          li {
+            display: flex;
+            padding-right: $extraextralarge-padding;
+            .icon {
+              margin-right: $small-margin;
+              padding-top: 3px;
+            }
+          }
+        }
+        a {
+          text-decoration: underline;
+          color: $vedio-play-icon;
+        }
+
+        h3 {
+          font-size: 18px;
+          color: $black-text;
+          font-weight: bold;
+        }
+
+        &:last-of-type {
+          text-align: left;
+          @media (min-width: 768px) {
+            text-align: right;
+            padding: 0;
+          }
+          p {
+            font-size: 16px;
+
+            &:first-child,
+            &:last-of-type {
+              font-weight: bold;
+            }
+            &:first-child {
+              font-size: 20px;
+            }
+            &:last-of-type {
+              margin-bottom: 25px;
+            }
+          }
+          a {
+            width: 115px;
+            height: 29px;
+            background-color: $vedio-play-icon;
+            color: $secondary-color;
+            padding: 8px 40px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-top: $middle-margin;
+          }
+        }
+      }
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.hotel-title-wrapper {
+  .choose-btn {
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+    a {
+      background: $red-colour;
+      color: $secondary-color !important;
+      cursor: pointer;
+      @media (min-width: 768px) {
+        margin-top: $large-margin;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: $extralarge-margin;
+  }
+}

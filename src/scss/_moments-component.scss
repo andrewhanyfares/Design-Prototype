@@ -1,0 +1,48 @@
+.moments {
+  background: $white;
+  padding: 20px;
+  box-shadow: 0px 0px 13px 2px $shadow;
+  margin-top: $extralarge-margin;
+  padding-bottom: 0;
+  .moments-title {
+    text-transform: uppercase;
+    color: $red-colour;
+    font-weight: 700;
+  }
+  .cards {
+    list-style: none;
+    margin-top: $large-margin;
+    padding: 0;
+    .card-wrapper {
+      min-height: 270px;
+      background: $powder-gray;
+      margin-bottom: $middle-margin;
+      .card-img {
+        height: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .card-text {
+        padding: $small-padding $large-padding;
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+          h6 {
+            color: $black;
+            font-weight: bold;
+          }
+        }
+        p {
+          color: $dark-gray;
+          line-height: 1.4;
+          @media (max-width: 1024px) {
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+
+}

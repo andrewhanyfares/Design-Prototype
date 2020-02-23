@@ -1,0 +1,126 @@
+@import "colors";
+@import "variables";
+.flights{
+    ul 
+    {
+        padding: 0;
+        list-style: none; 
+        li 
+        {
+            &:first-child 
+            {
+                @media (max-width: 992px) 
+                {
+                    margin-top:$large-margin;
+                }
+
+            }
+            padding: $large-padding;
+            border: 1px solid $header-bottom-border;
+            margin-bottom: $large-margin;
+            >p
+            {
+                font-size: 13px;
+                &:last-of-type 
+                {
+                    color:$vedio-play-icon;
+                    font-weight: bold;
+                    &::after 
+                    {
+                        content:"\f078";
+                        font-family: 'fontawesome';
+                        margin-left:$small-margin;   
+                    }
+                }
+            }
+             .details
+             {
+                margin-bottom: $middle-margin;
+                
+                >div 
+                {
+                    p{
+                        font-size: 13px;
+                      }
+                    span
+                    {
+                        display: block;
+                        margin-bottom:$small-margin;
+                        &:first-child
+                        {
+                            font-weight: bold;
+                            &.icons-by-side 
+                            {
+                                display: inline-block;
+                                margin-right: $small-margin;
+                               
+                            }
+                        }
+                    }  
+                    .icon 
+                    {
+                        margin: 0 $extrasmall-margin;
+                        font-size: 12px;
+                    }
+                    &:first-child 
+                    {
+                        padding-right: 0;
+                        font-size: 13px;
+                        span:first-child
+                        {
+                            font-size: 15px;
+                        }
+                       p 
+                       {
+                           color: $dark-green;
+                           font-weight: bold;  
+                       }
+                    }
+                    &:last-child
+                    {
+                        padding-left: 0;
+                        text-align: right;
+                        @media (max-width: 992px)
+                        {
+                            text-align: left;
+                            padding-left: $middle-padding;
+                        }
+                        span
+                        {
+                            font-size: 16px;
+                            color: $red-colour;
+                            margin-bottom: $middle-margin;
+
+                        }
+
+                        a 
+                        {
+                            width: 109px;
+                            height: 29px;
+                            background-color: $vedio-play-icon;
+                            color: $white;
+                            padding: 8px 35px;
+                            text-decoration: none;
+                            border-radius: 4px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+             }
+                .border-bottom 
+                {
+                    border-bottom: 1px solid $header-bottom-border;
+                    padding-bottom:$small-padding;
+                }
+                p 
+                {
+                    margin-bottom: $extrasmall-margin;
+                }
+           
+        }
+    }
+   
+}  
+
+
+  

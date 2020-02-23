@@ -1,0 +1,45 @@
+.coworkers,
+.trending-documents {
+  background: $white;
+  padding: $middle-padding $large-padding 0 $large-padding;
+  box-shadow: 0px 0px 13px 2px $shadow;
+  margin-top: $extralarge-margin;
+  width: 100%;
+  .stripped-list {
+    margin-top: $middle-margin;
+    padding: 0;
+    li {
+      list-style: none;
+      padding: $small-padding 0px;
+
+      display: flex;
+      &:nth-child(even) {
+        background: $grey-background;
+      }
+      &:first-child {
+        border-top: 1px solid $border-color;
+      }
+      &:last-child {
+        border-bottom: 1px solid $border-color;
+      }
+      .list-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin: 0 $small-margin;
+        &.list-doc-img {
+          border-radius: 0px;
+        }
+      }
+
+      .stripped-list-content {
+        margin-top: $small-margin;
+
+        .title {
+          font-size: 10px;
+          color: $minor-text;
+        }
+      }
+    }
+  }
+}
